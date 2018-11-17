@@ -1,4 +1,4 @@
-export class FileIItem {
+export class FileItem {
   public archivo: File;
   public nombreArchivo: string;
   public url: string;
@@ -8,7 +8,7 @@ export class FileIItem {
   constructor( archivo: File ) {
     this.archivo = archivo;
     this.nombreArchivo = archivo.name;
-    
+
     this.estaSubiendo = false;
     this.progreso = 0;
   }

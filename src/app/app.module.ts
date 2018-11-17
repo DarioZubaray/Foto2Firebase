@@ -1,5 +1,6 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule }   from '@angular/forms';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { environment } from '../environments/environment';
@@ -18,6 +19,7 @@ import { APP_ROUTING } from './app.routes';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     APP_ROUTING,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule
