@@ -17,4 +17,8 @@ export class CargaComponent {
   cargarImagenes() {
     this._cis.cargarImagenesFirebase( this.archivos );
   }
+
+  limpiarArchivos() {
+    this.archivos = [];
+  }
 }
