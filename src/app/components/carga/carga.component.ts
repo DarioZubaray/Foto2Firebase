@@ -9,6 +9,7 @@ import { CargaImagenesService } from '../../services/carga-imagenes.service';
 })
 export class CargaComponent {
 
+  estaSobreElemento: boolean = false;
   archivos: FileItem[] = [];
 
   constructor( public _cis: CargaImagenesService ) { }

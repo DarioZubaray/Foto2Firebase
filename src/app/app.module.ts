@@ -10,12 +10,14 @@ import { FotoComponent } from './components/foto/foto.component';
 import { CargaComponent } from './components/carga/carga.component';
 
 import { APP_ROUTING } from './app.routes';
+import { NgDropFilesDirective } from './directives/ng-drop-files.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     FotoComponent,
-    CargaComponent
+    CargaComponent,
+    NgDropFilesDirective
   ],
   imports: [
     BrowserModule,
